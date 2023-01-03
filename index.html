@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/download.jpg" type="image/x-icon">
+    <title>Playstation site</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navebar">
+            <img src="./images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#">Game Controllers</a></li>
+                    <li><a href="#">VR Accossoriesr</a></li>
+                    <li><a href="#">Media Rmotes</a></li>
+                    <li><a href="#">Others</a></li>
+                    <li><a href="../portifolio/index.html">Portfolio</a></li>
+                </ul>
+                <img src="./images/moon.png" id="icon">
+            </nav>
+            <img src="./images/menu.png" class="menu" onclick="togglemenu()">
+        </div>
+        
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 VS <br> Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Genric)</p>
+                <h4>$33.50</h4>
+                <button type="button">Buy Now <img src="./images/arrow.png"></button>
+            </div>
+
+            <div class="col-2">
+                <img src="./images/controller.png" class="controll">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="./images/add.png">
+                    <p><small>Add To Chart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./images/fb.png">
+            <img src="./images/ig.png">
+            <img src="./images/tw.png">
+        </div>
+    </div>
+
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        
+        function togglemenu(){
+            if( menulist.style.maxHeight == "0px" )
+                {
+                    menulist.style.maxHeight = "160px";
+                }
+            else
+                {
+                    menulist.style.maxHeight = "0px";
+                }
+        }
+
+        var icon = document.getElementById('icon');
+        icon.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    
+</body>
+</html>
